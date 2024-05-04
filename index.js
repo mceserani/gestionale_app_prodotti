@@ -5,7 +5,7 @@ import express from 'express'
 
 const api = express();
 
-app.use((req, res, next) => {
+api.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*'); // Permette a tutte le origini
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     next();
